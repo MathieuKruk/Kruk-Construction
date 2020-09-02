@@ -1,0 +1,66 @@
+.centered_box.form
+	h2 Contact form
+	hr
+	
+	form
+		.form-row
+			.form-group.col-md-6
+				label(for="inputFirstName") First Name
+				input(type="text" class="form-control" id="inputFirstName" placeholder="First Name")
+
+			.form-group.col-md-6
+				label(for="inputLastName") Last Name
+				input(type="text" class="form-control" id="inputLastName" placeholder="Last Name")
+
+			.form-group.col-md-6
+				label(for="inputEmail") Email
+				input(type="email" class="form-control" id="inputEmail" placeholder="Email")
+
+			.form-group.col-md-6
+				label(for="inputTel") Telephone
+				input(type="tel" class="form-control" id="inputTel" placeholder="Your phone number")
+
+			.form-group.col-md-4
+				label(for="inputSubject") Subject
+				select#inputState.form-control
+					option(selected) Reservation
+					option Complaint
+					option Job
+
+			.form-group.col-md-12
+				label(for="inputMessage") Message
+				textarea.form-control#inputMessage(rows="3" placeholder="Write your text here")
+
+			.form-group
+				.form-check
+					input.form-check-input#gridCheck(type="checkbox")
+					label.form-check-label(for="gridCheck") Would you like to hear the latest news and updates from Tatry Restaurant?
+
+		.form-row
+			.col-12.d-flex.justify-content-center
+				button.btn.btn-primary(type="submit") Send
+
+//- script.
+//- 	$('form').on('submit', (e) => {
+//- 		e.preventDefault();
+
+//- 		const firstname = $('#inputFirstName').val().trim();
+//- 		const lastname = $('#inputLastName').val().trim();
+//- 		const email = $('#inputEmail').val().trim();
+//- 		const tel = $('#inputTel').val().trim();
+//- 		const subject = $('#inputSubject').val().trim();
+//- 		const message = $('#inputMessage').val().trim();
+
+//- 		const data = {
+//- 			firstname,
+//- 			lastname,
+//- 			email,
+//- 			tel,
+//- 			subject,
+//- 			message
+//- 		}
+
+//- 		$.post('/contact', data, function(){
+//- 			console.log('Server received the data');
+//- 		});
+//- 	});

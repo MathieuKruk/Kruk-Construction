@@ -1,0 +1,43 @@
+.acordion_menus
+	.card
+		background-color: $third-color
+	h2
+		text-align: center
+		margin-bottom: 3%
+	h3
+		margin-bottom: 2%
+		margin-top: 1%
+	button
+		font-size: 22px
+		color: $main-text-color
+		&:hover
+			color: white
+	.badge
+		width: 45px
+		background-color: $main-color
+		color: $third-text-color
+	.card-header
+		text-align: center
+		@include phone
+			text-align: center
+	.illustration
+		margin-bottom: 2%
+		height: auto
+		.row
+			figure
+				height: 350px
+				@include phone
+					height: 210px
+					text-align: center
+				img
+					object-fit: cover
+					width: 100%
+					height: 100%
+					@include phone
+						height: 70%
+					border-radius: 6%
+					margin-bottom: 2%
+				figcaption
+					text-align: center
+	.collapse
+		background-color: whitesmoke
