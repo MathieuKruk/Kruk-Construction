@@ -118,6 +118,9 @@ nav .collapse ul li a.nav-link {
 footer {
   padding: 2% 2%;
   background-color: #002944; }
+  @media (max-width: 600px) {
+    footer {
+      padding: 5% 5%; } }
   footer a.address {
     color: #BBBBBB; }
   footer ul {
@@ -127,7 +130,8 @@ footer {
     footer li a {
       color: #BBBBBB; }
   footer p.signature {
-    color: white; }
+    color: white;
+    margin-left: 6px; }
   footer a:hover, footer span:hover {
     color: white; }
 

@@ -1,5 +1,7 @@
 footer
 	padding: 2% 2%
+	@include phone
+		padding: 5% 5%
 	background-color: $main-color
 	a.address
 		color: $third-text-color
@@ -11,6 +13,7 @@ footer
 			color: $third-text-color
 	p.signature
 		color: white
+		margin-left: 6px
 	a, span
 		&:hover
 			color: white
