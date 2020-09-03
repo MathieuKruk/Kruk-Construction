@@ -1,5 +1,5 @@
 nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light.shadow
-	img(src="/images/website/favicon-32x32.png" alt="")
+	img(src="/images/website/logo-kruk.png" alt="")
 	a.navbar-brand(href="/") Kruk Construction
 	button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
 		span.navbar-toggler-icon
@@ -10,7 +10,14 @@ nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light.shadow
 				a.nav-link(href="/") Accueil
 			li.nav-item
 				a.nav-link(href="/about") A propos
-			li.nav-item
-				a.nav-link(href="/achievements") Réalisations
+			li.nav-item.dropdown
+				a.nav-link.dropdown-toggle(href="/achievements" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Réalisations
+				.dropdown-menu(aria-labelledby="navbarDropdown")
+					a.dropdown-item(href="#") Façades isolantes
+					a.dropdown-item(href="#") Gros oeuvres
+					a.dropdown-item(href="#") Rénovations
+					a.dropdown-item(href="#") Terrassements
+					.dropdown-divider
+					a.dropdown-item(href="#") Demander un devis
 			li.nav-item
 				a.nav-link(href="/contact") Contact

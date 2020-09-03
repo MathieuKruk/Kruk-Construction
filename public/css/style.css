@@ -107,7 +107,9 @@ nav a.navbar-brand {
   color: #002944 !important; }
 
 nav img {
-  margin-right: 1%; }
+  margin-right: 1%;
+  width: 30px;
+  height: 30px; }
 
 nav .collapse ul li a.nav-link {
   color: #002944 !important;
@@ -304,15 +306,16 @@ footer {
 
 .skills .box {
   padding: 6% 1%;
-  background-color: #002944;
-  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+  border: 3px solid #002944;
   border-radius: 6px 6px 6px 6px;
   text-align: center;
   height: 200px; }
+  @media (max-width: 600px) {
+    .skills .box {
+      margin-bottom: 3%; } }
   .skills .box:hover {
     transform: scale(0.95); }
-  .skills .box h4 {
-    color: #f7f7f7 !important; }
   .skills .box img {
     width: 70px;
     height: 70px;
