@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6, nav.menu {
-  font-family: "Lobster", cursive;
+  font-family: "Ubuntu", sans-serif;
   color: #0f0b0b;
   font-weight: 500; }
 
@@ -45,7 +45,7 @@ nav.menu ul li a {
 
 p, ul {
   font-size: 18px;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #0f0b0b;
   font-weight: 300; }
   @media (max-width: 600px) {
@@ -53,7 +53,7 @@ p, ul {
       font-size: 16px; } }
 
 label {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 300; }
 
 .centered_box {
@@ -87,7 +87,7 @@ body, html {
   height: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background-image: url("../images/website/bg-pattern.png"); }
+  background-color: #f7f7f7; }
 
 .row {
   margin-bottom: 2%; }
@@ -103,19 +103,19 @@ body, html {
     .jumbotron.jumbotron-fluid {
       height: 150px; } }
 
-nav {
-  display: flex; }
-  nav img {
-    margin-right: 1%; }
-  nav .collapse {
-    justify-content: end !important; }
-    nav .collapse ul li a.nav-link {
-      color: #BBBBBB !important;
-      text-align: right; }
+nav a.navbar-brand {
+  color: #002944 !important; }
+
+nav img {
+  margin-right: 1%; }
+
+nav .collapse ul li a.nav-link {
+  color: #002944 !important;
+  text-align: right; }
 
 footer {
   padding: 2% 2%;
-  background-color: #0e1113; }
+  background-color: #002944; }
   footer a.address {
     color: #BBBBBB; }
   footer ul {
@@ -134,10 +134,10 @@ footer {
   margin-bottom: 6%; }
 
 .list_allergens ul li {
-  background-color: #725953; }
+  background-color: #000000; }
 
 .acordion_menus .card {
-  background-color: #725953; }
+  background-color: #000000; }
 
 .acordion_menus h2 {
   text-align: center;
@@ -155,7 +155,7 @@ footer {
 
 .acordion_menus .badge {
   width: 45px;
-  background-color: #0e1113;
+  background-color: #002944;
   color: #BBBBBB; }
 
 .acordion_menus .card-header {
@@ -193,7 +193,7 @@ footer {
   margin-bottom: 4%; }
 
 .textblock img {
-  border: 3px solid #0e1113;
+  border: 3px solid #002944;
   height: 100%; }
 
 .textblock .carousel {
@@ -216,11 +216,11 @@ footer {
 .article img {
   height: 400px;
   width: 600px;
-  border: 3px solid #0e1113; }
+  border: 3px solid #002944; }
   @media (max-width: 600px) {
     .article img {
       height: 180px;
-      width: 260px; } }
+      width: 240px; } }
 
 .article a {
   color: white; }
@@ -232,7 +232,7 @@ footer {
   .gallery img {
     object-fit: cover;
     width: 100%;
-    border: 3px solid #0e1113;
+    border: 3px solid #002944;
     margin-bottom: 5%;
     height: 370px; }
     @media (max-width: 600px) {
@@ -245,12 +245,12 @@ footer {
     text-align: center;
     margin-bottom: 4%; }
   .form button {
-    background-color: #725953;
-    border: 1px solid #0e1113; }
+    background-color: #000000;
+    border: 1px solid #002944; }
     .form button:hover {
       background-color: white;
       color: black;
-      border: 1px solid #725953; }
+      border: 1px solid #000000; }
 
 .map {
   margin-bottom: 2%; }
@@ -295,9 +295,25 @@ footer {
   .chatbot button {
     width: 100px;
     margin-left: 247px;
-    background-color: #725953;
-    border: 1px solid #0e1113; }
+    background-color: #000000;
+    border: 1px solid #002944; }
     .chatbot button:hover {
       background-color: white;
       color: black;
-      border: 1px solid #725953; }
+      border: 1px solid #000000; }
+
+.skills .box {
+  padding: 6% 1%;
+  background-color: #002944;
+  border: 1px solid #f7f7f7;
+  border-radius: 6px 6px 6px 6px;
+  text-align: center;
+  height: 200px; }
+  .skills .box:hover {
+    transform: scale(0.95); }
+  .skills .box h4 {
+    color: #f7f7f7 !important; }
+  .skills .box img {
+    width: 70px;
+    height: 70px;
+    margin: 6% 0% 8% 0%; }

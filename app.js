@@ -33,24 +33,6 @@ app.get('/', function(req, res) {
     console.log('DEV-Message: Home/landing page has correclty loaded')
 });
 
-// Food page
-app.get('/food', function(req, res) {
-    res.render('pages/food');
-    console.log('DEV-Message: Food page has correclty loaded')
-});
-
-// News page
-app.get('/news', function(req, res) {
-    res.render('pages/news');
-    console.log('DEV-Message: News page has correclty loaded')
-});
-
-// Gallery page
-app.get('/gallery', function(req, res) {
-    res.render('pages/gallery');
-    console.log('DEV-Message: Gallery page has correclty loaded')
-});
-
 // About us page
 app.get('/about', function(req, res) {
     res.render('pages/about');
@@ -75,5 +57,5 @@ app.get('*', (req, res, next) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
+    console.log(`The ${ websiteName } app is running on port ${ PORT }`);
 });
