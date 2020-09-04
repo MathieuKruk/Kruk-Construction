@@ -1,0 +1,36 @@
+.carouselle
+	.row
+		.offset-lg-2.col-lg-8
+			h2 Nos dernières réalisations
+			.carousel.slide#carouselExampleIndicators(data-ride="carousel")
+				ol.carousel-indicators
+					li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+					li(data-target="#carouselExampleIndicators" data-slide-to="1")
+					li(data-target="#carouselExampleIndicators" data-slide-to="2")
+
+				.carousel-inner
+					.carousel-item.active
+						img(src="/images/website/test.jpg" alt="...")
+						.carousel-caption.d-none.d-md-block
+							h5 Réalisation de ...
+							p Petite descritpion
+							a(href="#") lien
+					.carousel-item
+						img(src="/images/website/chantier.jpg" alt="...")
+						.carousel-caption.d-none.d-md-block
+							h5 Réalisation de ...
+							p Petite descritpion
+							a(href="#") lien
+					.carousel-item
+						img(src="/images/website/test.jpg" alt="...")
+						.carousel-caption.d-none.d-md-block
+							h5 Réalisation de ...
+							p Petite descritpion
+							a(href="#") lien
+				a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+					span.carousel-control-prev-icon(aria-hidden="true")
+					span.sr-only Previous
+
+				a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+					span.carousel-control-next-icon(aria-hidden="true")
+					span.sr-only Next

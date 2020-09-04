@@ -90,18 +90,7 @@ body, html {
   background-color: #f7f7f7; }
 
 .row {
-  margin-bottom: 2%; }
-
-.jumbotron.jumbotron-fluid {
-  text-align: center;
-  height: 350px;
-  background-image: url("../images/website/jumbotron.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: fill; }
-  @media (max-width: 600px) {
-    .jumbotron.jumbotron-fluid {
-      height: 150px; } }
+  margin-bottom: 6%; }
 
 nav a.navbar-brand {
   color: #002944 !important; }
@@ -116,7 +105,7 @@ nav .collapse ul li a.nav-link {
   text-align: right; }
 
 footer {
-  padding: 2% 2%;
+  padding: 1% 1%;
   background-color: #002944; }
   @media (max-width: 600px) {
     footer {
@@ -135,115 +124,17 @@ footer {
   footer a:hover, footer span:hover {
     color: white; }
 
-.list_allergens h2 {
+.jumbotron.jumbotron-fluid {
   text-align: center;
-  margin-bottom: 6%; }
-
-.list_allergens ul li {
-  background-color: #000000; }
-
-.acordion_menus .card {
-  background-color: #000000; }
-
-.acordion_menus h2 {
-  text-align: center;
-  margin-bottom: 3%; }
-
-.acordion_menus h3 {
-  margin-bottom: 2%;
-  margin-top: 1%; }
-
-.acordion_menus button {
-  font-size: 22px;
-  color: #0f0b0b; }
-  .acordion_menus button:hover {
-    color: white; }
-
-.acordion_menus .badge {
-  width: 45px;
-  background-color: #002944;
-  color: #BBBBBB; }
-
-.acordion_menus .card-header {
-  text-align: center; }
+  height: 450px;
+  background-image: url("../images/website/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 25%;
+  object-fit: fill; }
   @media (max-width: 600px) {
-    .acordion_menus .card-header {
-      text-align: center; } }
-
-.acordion_menus .illustration {
-  margin-bottom: 2%;
-  height: auto; }
-  .acordion_menus .illustration .row figure {
-    height: 350px; }
-    @media (max-width: 600px) {
-      .acordion_menus .illustration .row figure {
-        height: 210px;
-        text-align: center; } }
-    .acordion_menus .illustration .row figure img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 6%;
-      margin-bottom: 2%; }
-      @media (max-width: 600px) {
-        .acordion_menus .illustration .row figure img {
-          height: 70%; } }
-    .acordion_menus .illustration .row figure figcaption {
-      text-align: center; }
-
-.acordion_menus .collapse {
-  background-color: whitesmoke; }
-
-.textblock h2 {
-  text-align: center;
-  margin-bottom: 4%; }
-
-.textblock img {
-  border: 3px solid #002944;
-  height: 100%; }
-
-.textblock .carousel {
-  margin-top: 5%;
-  height: 450px; }
-  @media (max-width: 600px) {
-    .textblock .carousel {
-      height: 150px !important; } }
-  @media (max-width: 1024px) {
-    .textblock .carousel {
-      height: 350px; } }
-
-.article h2 {
-  text-align: center;
-  margin-bottom: 4%; }
-
-.article h3, .article h4 {
-  text-decoration: underline; }
-
-.article img {
-  height: 400px;
-  width: 600px;
-  border: 3px solid #002944; }
-  @media (max-width: 600px) {
-    .article img {
-      height: 180px;
-      width: 240px; } }
-
-.article a {
-  color: white; }
-
-.gallery {
-  margin-bottom: 2%; }
-  .gallery h2 {
-    text-align: center; }
-  .gallery img {
-    object-fit: cover;
-    width: 100%;
-    border: 3px solid #002944;
-    margin-bottom: 5%;
-    height: 370px; }
-    @media (max-width: 600px) {
-      .gallery img {
-        height: 250px; } }
+    .jumbotron.jumbotron-fluid {
+      height: 150px; } }
 
 .form {
   margin-bottom: 2%; }
@@ -308,19 +199,53 @@ footer {
       color: black;
       border: 1px solid #000000; }
 
-.skills .box {
-  padding: 6% 1%;
+.skills {
+  margin-top: 6%; }
+  .skills .box {
+    padding: 6% 1%;
+    background-color: #f7f7f7;
+    border: 5px solid #002944;
+    border-radius: 6px 6px 6px 6px;
+    text-align: center;
+    height: 200px; }
+    @media (max-width: 600px) {
+      .skills .box {
+        margin-bottom: 3%; } }
+    @media (max-width: 1024px) {
+      .skills .box {
+        margin-bottom: 5%; } }
+    .skills .box:hover {
+      transform: scale(1.05); }
+    .skills .box img {
+      width: 70px;
+      height: 70px;
+      margin: 6% 0% 8% 0%; }
+
+.ad .banner {
+  padding: 2% 2%;
+  background-color: #002944; }
+
+.ad .box {
   background-color: #f7f7f7;
-  border: 3px solid #002944;
-  border-radius: 6px 6px 6px 6px;
-  text-align: center;
-  height: 200px; }
+  padding: 2% 2%; }
+  .ad .box h2 {
+    color: red; }
+
+.carouselle h2 {
+  margin-bottom: 2%;
+  text-align: center; }
+
+.carouselle .carousel {
+  height: 600px; }
+  .carouselle .carousel .carousel-caption {
+    background-color: #002944; }
+    .carouselle .carousel .carousel-caption h5, .carouselle .carousel .carousel-caption p {
+      color: white; }
+
+.carouselle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
   @media (max-width: 600px) {
-    .skills .box {
-      margin-bottom: 3%; } }
-  .skills .box:hover {
-    transform: scale(0.95); }
-  .skills .box img {
-    width: 70px;
-    height: 70px;
-    margin: 6% 0% 8% 0%; }
+    .carouselle img {
+      object-fit: contain; } }

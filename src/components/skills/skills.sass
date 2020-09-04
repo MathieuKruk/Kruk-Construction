@@ -1,15 +1,18 @@
 .skills
+	margin-top: 6%
 	.box
 		@include phone
 			margin-bottom: 3%
+		@include tablet
+			margin-bottom: 5%
 		padding: 6% 1%
 		background-color: $sec-color
-		border: 3px solid $main-color
+		border: 5px solid $main-color
 		border-radius: 6px 6px 6px 6px
 		text-align: center
 		height: 200px
 		&:hover
-			transform: scale(0.95)
+			transform: scale(1.05)
 		img
 			width: 70px
 			height: 70px
