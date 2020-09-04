@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6, nav.menu {
   font-family: "Ubuntu", sans-serif;
-  color: #0f0b0b;
+  color: #181818;
   font-weight: 500; }
 
 h1 {
@@ -46,7 +46,7 @@ nav.menu ul li a {
 p, ul {
   font-size: 18px;
   font-family: "Archivo", sans-serif;
-  color: #0f0b0b;
+  color: #181818;
   font-weight: 300; }
   @media (max-width: 600px) {
     p, ul {
@@ -105,26 +105,31 @@ nav .collapse ul li a.nav-link {
   text-align: right; }
 
 footer {
-  padding: 1% 1%;
+  padding: 2% 2%;
   background-color: #002944; }
   @media (max-width: 600px) {
     footer {
       padding: 5% 5%; } }
+  @media (max-width: 1024px) {
+    footer {
+      padding: 5% 5%; } }
+  footer .row {
+    margin-bottom: -1%; }
   footer a.address {
-    color: #BBBBBB; }
+    color: #f0f0f0; }
   footer ul {
     list-style-type: none; }
   footer li {
     margin-left: -35px; }
     footer li a {
-      color: #BBBBBB; }
+      color: #f0f0f0; }
   footer p.signature {
     color: white;
     margin-left: 6px; }
   footer a:hover, footer span:hover {
     color: white; }
 
-.jumbotron.jumbotron-fluid {
+.jumbotron.jumbotron-fluid.landing {
   text-align: center;
   height: 450px;
   background-image: url("../images/website/jumbotron.jpg");
@@ -133,7 +138,7 @@ footer {
   background-position-y: 25%;
   object-fit: fill; }
   @media (max-width: 600px) {
-    .jumbotron.jumbotron-fluid {
+    .jumbotron.jumbotron-fluid.landing {
       height: 150px; } }
 
 .form {
@@ -206,37 +211,65 @@ footer {
     background-color: #f7f7f7;
     border: 5px solid #002944;
     border-radius: 6px 6px 6px 6px;
-    text-align: center;
-    height: 200px; }
+    text-align: center; }
     @media (max-width: 600px) {
       .skills .box {
-        margin-bottom: 3%; } }
+        margin-bottom: 3%;
+        padding: 2% 1%; } }
     @media (max-width: 1024px) {
       .skills .box {
         margin-bottom: 5%; } }
     .skills .box:hover {
-      transform: scale(1.05); }
+      animation-name: button_pulse;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; }
     .skills .box img {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       margin: 6% 0% 8% 0%; }
+      @media (max-width: 600px) {
+        .skills .box img {
+          width: 30px;
+          height: 30px; } }
+    .skills .box p {
+      font-size: 14pt; }
 
 .ad .banner {
   padding: 2% 2%;
   background-color: #002944; }
+  @media (max-width: 600px) {
+    .ad .banner {
+      padding: 5% 3%; } }
+  @media (max-width: 1024px) {
+    .ad .banner {
+      padding: 5% 3%; } }
 
 .ad .box {
   background-color: #f7f7f7;
-  padding: 2% 2%; }
+  padding: 2% 2%;
+  text-align: justify;
+  border: 1px solid #002944; }
+  @media (max-width: 600px) {
+    .ad .box {
+      padding: 8% 5%; } }
+  @media (max-width: 1024px) {
+    .ad .box {
+      padding: 5% 3%; } }
   .ad .box h2 {
     color: red; }
 
 .carouselle h2 {
   margin-bottom: 2%;
   text-align: center; }
+  @media (max-width: 600px) {
+    .carouselle h2 {
+      margin-bottom: 4%; } }
 
 .carouselle .carousel {
   height: 600px; }
+  @media (max-width: 600px) {
+    .carouselle .carousel {
+      height: 350px; } }
   .carouselle .carousel .carousel-caption {
     background-color: #002944; }
     .carouselle .carousel .carousel-caption h5, .carouselle .carousel .carousel-caption p {
@@ -245,7 +278,36 @@ footer {
 .carouselle img {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
-  @media (max-width: 600px) {
-    .carouselle img {
-      object-fit: contain; } }
+  object-fit: cover;
+  border: 1px solid #002944; }
+
+.presentation {
+  margin-top: 5%; }
+  .presentation .box {
+    background-color: #002944;
+    padding: 5% 4%; }
+    .presentation .box span, .presentation .box p {
+      color: #f0f0f0; }
+    @media (max-width: 600px) {
+      .presentation .box {
+        padding: 8% 5%; } }
+    @media (max-width: 1024px) {
+      .presentation .box {
+        padding: 5% 3%; } }
+  .presentation .picture {
+    width: 250px;
+    height: 250px; }
+    .presentation .picture img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 6px solid #002944;
+      object-fit: cover; }
+
+@keyframes button_pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }

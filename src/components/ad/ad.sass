@@ -1,9 +1,19 @@
 .ad
 	.banner
 		padding: 2% 2%
+		@include phone
+			padding: 5% 3%
+		@include tablet
+			padding: 5% 3%
 		background-color: $main-color
 	.box
 		background-color: $sec-color
 		padding: 2% 2%
+		@include phone
+			padding: 8% 5%
+		@include tablet
+			padding: 5% 3%
+		text-align: justify
 		h2
 			color: red
+		border: 1px solid $main-color

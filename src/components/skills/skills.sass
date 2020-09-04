@@ -3,6 +3,7 @@
 	.box
 		@include phone
 			margin-bottom: 3%
+			padding: 2% 1%
 		@include tablet
 			margin-bottom: 5%
 		padding: 6% 1%
@@ -10,10 +11,16 @@
 		border: 5px solid $main-color
 		border-radius: 6px 6px 6px 6px
 		text-align: center
-		height: 200px
 		&:hover
-			transform: scale(1.05)
+			animation-name: button_pulse
+			animation-duration: 1s
+			animation-iteration-count: infinite
 		img
-			width: 70px
-			height: 70px
+			width: 60px
+			height: 60px
+			@include phone
+				width: 30px
+				height: 30px
 			margin: 6% 0% 8% 0%
+		p
+			font-size: 14pt
