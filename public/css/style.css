@@ -209,7 +209,7 @@ footer {
   .skills .box {
     padding: 6% 1%;
     background-color: #f7f7f7;
-    border: 5px solid #002944;
+    border: 5px solid #000000;
     border-radius: 6px 6px 6px 6px;
     text-align: center; }
     @media (max-width: 600px) {
@@ -220,6 +220,7 @@ footer {
       .skills .box {
         margin-bottom: 5%; } }
     .skills .box:hover {
+      box-shadow: 5px 2px 2px #002944;
       animation-name: button_pulse;
       animation-duration: 1s;
       animation-iteration-count: infinite; }
@@ -256,7 +257,8 @@ footer {
     .ad .box {
       padding: 5% 3%; } }
   .ad .box h2 {
-    color: red; }
+    color: red;
+    text-align: center; }
 
 .carouselle h2 {
   margin-bottom: 2%;
