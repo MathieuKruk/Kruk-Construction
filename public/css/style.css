@@ -303,7 +303,7 @@ footer {
       display: block;
       width: 100%;
       height: 100%;
-      border: 6px solid #002944;
+      border: 3px solid #002944;
       object-fit: cover; }
 
 @keyframes button_pulse {
