@@ -1,3 +1,5 @@
+/***** Scale animation *****/
+	
 @keyframes button_pulse
 	0%
 		transform: scale(1)
@@ -5,3 +7,41 @@
 		transform: scale(1.05)
 	100%
 		transform: scale(1)
+
+/***** Wiggle *****/
+
+@keyframes wiggle
+	0%
+		transform: translate(2px, 0)
+	50%
+		transform: translate(-2px, 0)
+	100%
+		transform: translate(2px, 0)
+
+
+/***** Shake *****/
+
+@keyframes shake
+	0%
+		transform: rotate(0.5deg)
+	50%
+		transform: rotate(-0.5deg)
+	100%
+		transform: rotate(0.5deg)
+
+/***** Pulse *****/
+
+@keyframes pulse
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.1)
+	100%
+		transform: scale(1)
+
+
+/***** Zoom *****/
+
+.zoom a:hover
+	transform: scale(1.1)
+	transition: all ease 500ms

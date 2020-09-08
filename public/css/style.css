@@ -104,6 +104,14 @@ nav .collapse ul li a.nav-link {
   color: #002944 !important;
   text-align: right; }
 
+nav .collapse ul li a.dropdown-item {
+  color: #002944 !important;
+  font-size: 12pt;
+  text-align: left; }
+  @media (max-width: 600px) {
+    nav .collapse ul li a.dropdown-item {
+      text-align: right; } }
+
 footer {
   padding: 2% 2%;
   background-color: #002944; }
@@ -142,8 +150,13 @@ footer {
       height: 150px; } }
 
 .form {
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  background-color: #002944;
+  padding: 5% 2%; }
+  .form label {
+    color: #f0f0f0; }
   .form h2 {
+    color: #f0f0f0;
     text-align: center;
     margin-bottom: 4%; }
   .form button {
@@ -155,7 +168,13 @@ footer {
       border: 1px solid #000000; }
 
 .map {
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  padding: 5% 2%;
+  border: 4px solid #002944; }
+  .map:hover {
+    background-color: #002944; }
+    .map:hover h2 {
+      color: #f0f0f0; }
   .map .responsive-map {
     width: 100%;
     height: 350px; }
@@ -206,6 +225,8 @@ footer {
 
 .skills {
   margin-top: 6%; }
+  .skills h2 {
+    text-align: center; }
   .skills .box {
     padding: 6% 1%;
     background-color: #f7f7f7;
@@ -306,6 +327,23 @@ footer {
       border: 3px solid #002944;
       object-fit: cover; }
 
+.partners h2 {
+  text-align: center; }
+
+.partners p {
+  text-align: center; }
+
+.partners img {
+  max-height: 150px;
+  max-width: 150px; }
+  .partners img:hover {
+    animation: wiggle 95ms infinite;
+    animation-timing-function: linear; }
+
+.md_sep {
+  background-color: #002944; }
+
+/***** Scale animation *****/
 @keyframes button_pulse {
   0% {
     transform: scale(1); }
@@ -313,3 +351,35 @@ footer {
     transform: scale(1.05); }
   100% {
     transform: scale(1); } }
+
+/***** Wiggle *****/
+@keyframes wiggle {
+  0% {
+    transform: translate(2px, 0); }
+  50% {
+    transform: translate(-2px, 0); }
+  100% {
+    transform: translate(2px, 0); } }
+
+/***** Shake *****/
+@keyframes shake {
+  0% {
+    transform: rotate(0.5deg); }
+  50% {
+    transform: rotate(-0.5deg); }
+  100% {
+    transform: rotate(0.5deg); } }
+
+/***** Pulse *****/
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+/***** Zoom *****/
+.zoom a:hover {
+  transform: scale(1.1);
+  transition: all ease 500ms; }

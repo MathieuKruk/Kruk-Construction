@@ -39,6 +39,30 @@ app.get('/about', function(req, res) {
     console.log('DEV-Message: About us page has correclty loaded')
 });
 
+// Achievment: insulating facades page
+app.get('/achievements/facades', function(req, res) {
+    res.render('pages/achievement-facades');
+    console.log('DEV-Message: Achievement page has correclty loaded')
+});
+
+// Achievment: Big works page
+app.get('/achievements/big-works', function(req, res) {
+    res.render('pages/achievement-big-works');
+    console.log('DEV-Message: Achievement us page has correclty loaded')
+});
+
+// Achievment: Renovations page
+app.get('/achievements/renovations', function(req, res) {
+    res.render('pages/achievement-renovations');
+    console.log('DEV-Message: Achievement us page has correclty loaded')
+});
+
+// Achievment: Earthworks page
+app.get('/achievements/earthworks', function(req, res) {
+    res.render('pages/achievement-earthworks');
+    console.log('DEV-Message: Achievement us page has correclty loaded')
+});
+
 // Contact page
 app.get('/contact', function(req, res) {
     res.render('pages/contact');
