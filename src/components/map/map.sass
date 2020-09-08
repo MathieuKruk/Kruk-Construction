@@ -1,6 +1,8 @@
 .map
 	margin-bottom: 2%
 	padding: 5% 2%
+	@include phone
+		padding: 5% 5%
 	border: 4px solid $main-color
 	&:hover
 		background-color: $main-color
@@ -8,7 +10,7 @@
 			color: $third-text-color
 	.responsive-map
 		width: 100%
-		height: 350px
+		height: 555px
 		iframe
 			width: 100%
 			height: 100%
