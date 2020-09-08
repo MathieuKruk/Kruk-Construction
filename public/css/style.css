@@ -232,7 +232,10 @@ footer {
 .skills {
   margin-top: 6%; }
   .skills h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 3%; }
+  .skills a {
+    text-decoration: none; }
   .skills .box {
     padding: 6% 1%;
     background-color: #f7f7f7;
