@@ -1,0 +1,19 @@
+.desc
+	background-color: $main-color
+	padding: 5% 2%
+	@include phone
+		padding: 5% 5%
+	h1, p
+		color: $third-text-color
+	h1
+		margin-bottom: 3%
+	p
+		text-align: justify
+		margin-right: 2%
+		@include phone
+			margin-right: 0%
+	img
+		object-fit: cover
+		max-width: 100%
+		max-height: 100%
+		border: 2px solid $sec-color

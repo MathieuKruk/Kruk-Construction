@@ -5,31 +5,31 @@
 	form
 		.form-row
 			.form-group.col-md-6
-				label(for="inputFirstName") First Name
-				input(type="text" class="form-control" id="inputFirstName" placeholder="First Name")
+				label(for="inputFirstName") Prénom
+				input(type="text" class="form-control" id="inputFirstName" placeholder="Prénom")
 
 			.form-group.col-md-6
-				label(for="inputLastName") Last Name
-				input(type="text" class="form-control" id="inputLastName" placeholder="Last Name")
+				label(for="inputLastName") Nom de famille
+				input(type="text" class="form-control" id="inputLastName" placeholder="Nom")
 
 			.form-group.col-md-6
 				label(for="inputEmail") Email
 				input(type="email" class="form-control" id="inputEmail" placeholder="Email")
 
 			.form-group.col-md-6
-				label(for="inputTel") Telephone
-				input(type="tel" class="form-control" id="inputTel" placeholder="Your phone number")
+				label(for="inputTel") Téléphone
+				input(type="tel" class="form-control" id="inputTel" placeholder="Numéro de téléphone")
 
 			.form-group.col-md-4
-				label(for="inputSubject") Subject
+				label(for="inputSubject") Sujets
 				select#inputState.form-control
-					option(selected) Reservation
-					option Complaint
-					option Job
+					option(selected) Question
+					option Plainte
+					option Autre
 
 			.form-group.col-md-12
 				label(for="inputMessage") Message
-				textarea.form-control#inputMessage(rows="3" placeholder="Write your text here")
+				textarea.form-control#inputMessage(rows="3" placeholder="Ecriver votre message ici")
 
 			.form-group
 				.form-check
@@ -38,7 +38,7 @@
 
 		.form-row
 			.col-12.d-flex.justify-content-center
-				button.btn.btn-primary(type="submit") Send
+				button.btn.btn-primary(type="submit") Envoyer
 
 //- script.
 //- 	$('form').on('submit', (e) => {
