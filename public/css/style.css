@@ -338,15 +338,15 @@ footer {
 .partners h2 {
   text-align: center; }
 
-.partners p {
-  text-align: center; }
-
-.partners img {
-  max-height: 150px;
-  max-width: 150px; }
-  .partners img:hover {
-    animation: wiggle 95ms infinite;
-    animation-timing-function: linear; }
+.partners .box {
+  height: 150px;
+  margin-bottom: 10%; }
+  .partners .box img {
+    max-height: 200px;
+    width: 100%; }
+    .partners .box img:hover {
+      animation: wiggle 95ms infinite;
+      animation-timing-function: linear; }
 
 .desc {
   background-color: #002944;

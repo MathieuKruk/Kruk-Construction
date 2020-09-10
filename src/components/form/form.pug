@@ -23,18 +23,14 @@
 			.form-group.col-md-4
 				label(for="inputSubject") Sujets
 				select#inputState.form-control
-					option(selected) Question
-					option Plainte
-					option Autre
+					option(value="question" selected) Question
+					option(value="plainte") Plainte
+					option(value="devis") Devis
+					option(value="autre") Autre
 
 			.form-group.col-md-12
 				label(for="inputMessage") Message
 				textarea.form-control#inputMessage(rows="3" placeholder="Ecriver votre message ici")
-
-			.form-group
-				.form-check
-					input.form-check-input#gridCheck(type="checkbox")
-					label.form-check-label(for="gridCheck") Would you like to hear the latest news and updates from Tatry Restaurant?
 
 		.form-row
 			.col-12.d-flex.justify-content-center
