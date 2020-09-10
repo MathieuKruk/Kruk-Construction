@@ -3,10 +3,14 @@
 		text-align: center
 	.box
 		height: 150px
-		margin-bottom: 10%
+		margin-bottom: 4%
 		img
+			display: block
 			max-height: 200px
 			width: 100%
+			@include phone
+				width: 60%
+				margin-left: 20%
 			&:hover
 				animation: wiggle 95ms infinite
 				animation-timing-function: linear

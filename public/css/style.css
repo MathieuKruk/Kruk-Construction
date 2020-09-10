@@ -327,7 +327,8 @@ footer {
         padding: 5% 3%; } }
   .presentation .picture {
     width: 250px;
-    height: 250px; }
+    height: 250px;
+    margin-bottom: 5%; }
     .presentation .picture img {
       display: block;
       width: 100%;
@@ -340,10 +341,15 @@ footer {
 
 .partners .box {
   height: 150px;
-  margin-bottom: 10%; }
+  margin-bottom: 4%; }
   .partners .box img {
+    display: block;
     max-height: 200px;
     width: 100%; }
+    @media (max-width: 600px) {
+      .partners .box img {
+        width: 60%;
+        margin-left: 20%; } }
     .partners .box img:hover {
       animation: wiggle 95ms infinite;
       animation-timing-function: linear; }
@@ -365,6 +371,7 @@ footer {
       .desc p {
         margin-right: 0%; } }
   .desc img {
+    margin: 5% 2%;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
