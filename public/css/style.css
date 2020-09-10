@@ -182,7 +182,7 @@ footer {
     color: #f0f0f0; }
   .map .responsive-map {
     width: 100%;
-    height: 555px; }
+    height: 510px; }
     .map .responsive-map iframe {
       width: 100%;
       height: 100%;
@@ -337,7 +337,8 @@ footer {
       object-fit: cover; }
 
 .partners h2 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: -3%; }
 
 .partners .box {
   height: 150px;
