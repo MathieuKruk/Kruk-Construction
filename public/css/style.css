@@ -339,6 +339,9 @@ footer {
 .partners h2 {
   text-align: center;
   margin-bottom: -3%; }
+  @media (max-width: 1024px) {
+    .partners h2 {
+      margin-bottom: 5%; } }
 
 .partners .box {
   height: 150px;
