@@ -143,7 +143,7 @@ footer {
   background-image: url("../images/website/jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 25%;
+  background-position-y: 40%;
   object-fit: fill; }
   @media (max-width: 600px) {
     .jumbotron.jumbotron-fluid {
