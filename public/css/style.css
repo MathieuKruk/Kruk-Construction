@@ -137,17 +137,53 @@ footer {
   footer a:hover, footer span:hover {
     color: white; }
 
-.jumbotron.jumbotron-fluid {
-  text-align: center;
-  height: 360px;
-  background-image: url("../images/website/jumbotron.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 40%;
-  object-fit: fill; }
+.jumbotron_landing {
+  height: 400px; }
   @media (max-width: 600px) {
-    .jumbotron.jumbotron-fluid {
-      height: 150px; } }
+    .jumbotron_landing {
+      height: 150px !important; } }
+  @media (max-width: 1024px) {
+    .jumbotron_landing {
+      height: 250px; } }
+  .jumbotron_landing .col-12 {
+    height: 100%; }
+    .jumbotron_landing .col-12 img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.jumbotron_about {
+  height: 400px; }
+  @media (max-width: 600px) {
+    .jumbotron_about {
+      height: 150px !important; } }
+  @media (max-width: 1024px) {
+    .jumbotron_about {
+      height: 250px; } }
+  .jumbotron_about .col-12 {
+    height: 100%; }
+    .jumbotron_about .col-12 img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.jumbotron_contact {
+  height: 400px; }
+  @media (max-width: 600px) {
+    .jumbotron_contact {
+      height: 150px !important; } }
+  @media (max-width: 1024px) {
+    .jumbotron_contact {
+      height: 250px; } }
+  .jumbotron_contact .col-12 {
+    height: 100%; }
+    .jumbotron_contact .col-12 img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.md_sep {
+  background-color: #002944; }
 
 .form {
   margin-bottom: 2%;
@@ -204,29 +240,6 @@ footer {
 .schedule table {
   margin-top: 4%;
   border-radius: 8px 8px 8px 8px; }
-
-.chatbot {
-  position: fixed;
-  bottom: 0;
-  right: 16px; }
-  @media (max-width: 600px) {
-    .chatbot {
-      right: 0px; } }
-  .chatbot iframe {
-    height: 430px;
-    width: 350px; }
-    @media (max-width: 600px) {
-      .chatbot iframe {
-        width: 100%; } }
-  .chatbot button {
-    width: 100px;
-    margin-left: 247px;
-    background-color: #000000;
-    border: 1px solid #002944; }
-    .chatbot button:hover {
-      background-color: white;
-      color: black;
-      border: 1px solid #000000; }
 
 .skills {
   margin-top: 6%; }
@@ -422,8 +435,28 @@ footer {
         height: 550px;
         width: 100%; } }
 
-.md_sep {
-  background-color: #002944; }
+.chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 16px; }
+  @media (max-width: 600px) {
+    .chatbot {
+      right: 0px; } }
+  .chatbot iframe {
+    height: 430px;
+    width: 350px; }
+    @media (max-width: 600px) {
+      .chatbot iframe {
+        width: 100%; } }
+  .chatbot button {
+    width: 100px;
+    margin-left: 247px;
+    background-color: #000000;
+    border: 1px solid #002944; }
+    .chatbot button:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid #000000; }
 
 /***** Scale animation *****/
 @keyframes button_pulse {
