@@ -17,6 +17,7 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "nodemailer": "^6.4.11",
+    "nodemailer-mailgun-transport": "^2.0.0",
     "pug": "^3.0.0"
   }
 }

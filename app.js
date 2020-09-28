@@ -2,6 +2,7 @@
 // GLOBAL CONST
 const express = require('express');
 const app = express();
+const path = require('path');
 const fs = require('fs');
 
 const websiteName = 'Kruk Construction';
@@ -14,14 +15,6 @@ app.set("view engine", "pug");
 app.set('views', __dirname + '/src');
 // Folder hosting all static files
 app.use(express.static(__dirname + '/public'));
-
-// app.get('/member/:name/planet/:home', (req, res) => {
-// 	const memberDetails = {
-// 		member: req.params.name,
-// 		planet: req.params.home
-// 	}
-// 	res.render('guardian', memberDetails);
-// });
 
 
 //#############################################################################################//
@@ -78,7 +71,7 @@ app.get('/contact', function(req, res) {
 });
 
 // Contact page
-app.post('/contact', function(req, res) {
+app.post('/email', function(req, res) {
 	console.log('Data: ', req.body)
 	res.json({ message: 'Message received!'})
 });
