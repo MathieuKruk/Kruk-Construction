@@ -314,16 +314,19 @@ footer {
   @media (max-width: 600px) {
     .carouselle .carousel {
       height: 350px; } }
-  .carouselle .carousel .carousel-caption {
-    background-color: #002944; }
-    .carouselle .carousel .carousel-caption h5, .carouselle .carousel .carousel-caption p {
-      color: white; }
-
-.carouselle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid #002944; }
+  .carouselle .carousel .carousel-inner {
+    height: 100%; }
+    .carouselle .carousel .carousel-inner .carousel-item {
+      height: 100%; }
+      .carouselle .carousel .carousel-inner .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid #002944; }
+      .carouselle .carousel .carousel-inner .carousel-item .carousel-caption {
+        background-color: #002944; }
+        .carouselle .carousel .carousel-inner .carousel-item .carousel-caption h5, .carouselle .carousel .carousel-inner .carousel-item .carousel-caption p {
+          color: white; }
 
 .presentation {
   margin-top: 5%; }
