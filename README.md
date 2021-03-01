@@ -51,14 +51,13 @@
 ## ◾ Tech/framework used
 
 1. Front-end
-   - [Pug](https://reactjs.org/)
-   - [JavaScript](https://reactjs.org/)
-   - [Bootstrap](https://react-bootstrap.github.io/)
+   - [Pug](https://pugjs.org/api/getting-started.html)
+   - [JavaScript](https://www.javascript.com/)
+   - [Bootstrap](https://getbootstrap.com/)
    - [Sass](https://sass-lang.com/)
    
 2. Others
-   - [Dialogflow](https://dialogflow.com/)
-   - [Node.js](https://reactjs.org/)
+   - [Node.js](https://nodejs.org/en/)
 
 <hr>
 
