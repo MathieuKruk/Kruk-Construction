@@ -17,10 +17,10 @@
 
 ## ◾ Features
 <ul>
-  <li>Homepage : .</li>
-  <li>About us: .</li>
-  <li>Works: .</li>
-  <li>Contact: .</li>
+  <li>Homepage : contains a quick acces to the works sections, a covid-19 message and a caroussel with the latest achievements.</li>
+  <li>About us: contains a short message from the owner as well as some links to the fake partners.</li>
+  <li>Works: contains 4 sections wich regroup different achievements, each one has a description and a picture.</li>
+  <li>Contact: contains one map and a contact form.</li>
 </ul>
 
 <hr>
