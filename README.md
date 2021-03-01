@@ -28,22 +28,22 @@
 
 ### Homepage
 <p align="center">
-  <img src="public/images/repository/homepage.jpg">
+  <img src="public/images/repository/homepage.png">
 </p>
 
 ### About us
 <p align="center">
-  <img src="public/images/repository/about.jpg">
+  <img src="public/images/repository/about.png">
 </p>
 
 ### Works
 <p align="center">
-  <img src="public/images/repository/works.jpg">
+  <img src="public/images/repository/works.png">
 </p>
 
 ### Contact
 <p align="center">
-  <img src="public/images/repository/contact.jpg">
+  <img src="public/images/repository/contact.png">
 </p>
 
 <hr>
