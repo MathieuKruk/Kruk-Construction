@@ -28,7 +28,22 @@
 
 ### Homepage
 <p align="center">
-  <img src="screenshoots/homepage.png">
+  <img src="public/images/repository/homepage.jpg">
+</p>
+
+### About us
+<p align="center">
+  <img src="public/images/repository/about.jpg">
+</p>
+
+### Works
+<p align="center">
+  <img src="public/images/repository/works.jpg">
+</p>
+
+### Contact
+<p align="center">
+  <img src="public/images/repository/contact.jpg">
 </p>
 
 <hr>
