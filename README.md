@@ -52,11 +52,13 @@
 
 1. Front-end
    - [Pug](https://reactjs.org/)
-   - [React-Bootstrap](https://react-bootstrap.github.io/)
+   - [JavaScript](https://reactjs.org/)
+   - [Bootstrap](https://react-bootstrap.github.io/)
    - [Sass](https://sass-lang.com/)
    
 2. Others
    - [Dialogflow](https://dialogflow.com/)
+   - [Node.js](https://reactjs.org/)
 
 <hr>
 
@@ -78,5 +80,5 @@ OpenSource | Free
 </p>
 
 <p align="right">
-  <img src="https://media.giphy.com/media/114NEaW5Q5Gikw/giphy.gif" height="40%" width="25%">
+  <img src="https://media.giphy.com/media/qWx5C3iSfwa6Q/giphy.gif" height="40%" width="25%">
 </p>
