@@ -1,28 +1,28 @@
 .form.rounded
 	h2 Formulaire de contact
 	hr
-	
-	form
+
+	form(method="POST", action="/send")
 		.form-row
 			.form-group.col-md-6
 				label(for="inputFirstName") Prénom
-				input(type="text" class="form-control" id="inputFirstName" placeholder="Prénom")
+				input(type="text" class="form-control" id="inputFirstName" name="inputFirstName" placeholder="Prénom")
 
 			.form-group.col-md-6
 				label(for="inputLastName") Nom de famille
-				input(type="text" class="form-control" id="inputLastName" placeholder="Nom")
+				input(type="text" class="form-control" id="inputLastName" name="inputLastName" placeholder="Nom")
 
 			.form-group.col-md-6
 				label(for="inputEmail") Email
-				input(type="email" class="form-control" id="inputEmail" placeholder="Email")
+				input(type="email" class="form-control" id="inputEmail" name="inputEmail"  placeholder="Email")
 
 			.form-group.col-md-6
 				label(for="inputTel") Téléphone
-				input(type="tel" class="form-control" id="inputTel" placeholder="Numéro de téléphone")
+				input(type="tel" class="form-control" id="inputTel" name="inputTel" placeholder="Numéro de téléphone")
 
 			.form-group.col-md-4
 				label(for="inputSubject") Sujets
-				select#inputState.form-control
+				select#inputSubject(name="inputSubject").form-control
 					option(value="question" selected) Question
 					option(value="plainte") Plainte
 					option(value="devis") Devis
@@ -30,32 +30,8 @@
 
 			.form-group.col-md-12
 				label(for="inputMessage") Message
-				textarea.form-control#inputMessage(rows="3" placeholder="Ecrivez votre message ici")
+				textarea.form-control#inputMessage(name="inputMessage" rows="3" placeholder="Ecrivez votre message ici")
 
 		.form-row
 			.col-12.d-flex.justify-content-center
-				input.btn.btn-primary(type="submit" value="Envoyer")
-
-script.
-		$('form').on('submit', (e) => {
-			e.preventDefault();
-
-			const firstName = $('#inputFirstName').val();
-			const lastName = $('#inputLastName').val();
-			const email = $('#inputEmail').val();
-			const tel = $('#inputTel').val();
-			const subject = $('#inputSubject').val();
-			const message =  $('#inputMessage').val();
-
-			const data = {
-				firstName,
-				lastName,
-				email,
-				tel,
-				subject,
-				message
-			};
-			$.post("/email", data, function() {
-				console.log("Server received our data");
-			});
-		});;
+				input.btn.btn-primary(type="submit",value="Envoyer",data-transition='fade', data-theme='c')
