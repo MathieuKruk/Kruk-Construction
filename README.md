@@ -48,7 +48,7 @@
 
 <hr>
 
-## ◾ Tech/framework used
+## ◾ Techs used
 
 1. Front-end
    - [Pug](https://pugjs.org/api/getting-started.html)
