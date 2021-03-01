@@ -74,54 +74,6 @@ app.get('/contact', function(req, res) {
 	console.log('DEV-Message: [PAGE RENDERING]_(SUCCESS) --  Contact page has correclty loaded.');
 });
 
-// Contact page
-app.post('/send', function(req, res) {
-	console.log(req.body);
-	const firstName = req.body.inputFirstName;
-	const lastName = req.body.inputLastName;
-	const email = req.body.inputEmail;
-	const tel = req.body.inputTel;
-	const subject = req.body.inputSubject;
-	const Message = req.body.inputMessage;
-
-	const formSubmission = firstName + " " + lastName;
-
-	console.log(formSubmission);
-
-	// NODEMAILER
-	// create reusable transporter object using the default SMTP transport
-	let transporter = nodemailer.createTransport({
-		host: 'smtp.gmail.com',
-		port: 465,
-		secure: true,
-		auth: {
-			user: 'gajwak.prod@gmail.com', // Your email id
-			pass: 'Duhaibei333moiGmL' // Your password
-		},
-		tls: {
-			// do not fail on invalid certs
-			rejectUnauthorized: false
-		}
-	});
-	
-	var mailOptions = {
-		from: 'Foo Bar ✔ <foobar@gmail.com>',
-		to: req.body.email,
-		subject: "Hello " + req.body.email,
-		text: 'Hello ' + req.body.email + '✔',
-		html: "<p>Hello " + req.body.email + " </p>",
-		bcc: "fred@gmail.com"
-	};
-	transporter.sendMail(mailOptions, function(error, info){
-		if(error){
-			console.log(error);
-		}else{
-			console.log('Message sent: ' + info.response);
-			res.send(200);
-		}
-	});
-});
-
 app.get('*', (req, res, next) => {
 	res.status(200).send('DEV-Message: [PAGE RENDERING]_(ERROR) --  Page not found');
 	next();
